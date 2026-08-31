@@ -1,37 +1,3 @@
-"""
-INKER ROBOTICS POSE ESTIMATION
------------------------------------------------------------
-Uses the current MediaPipe Tasks HolisticLandmarker API.
-
-Features
-- Body pose tracking
-- Left/right hand tracking (21 landmarks each)
-- Dense face mesh
-- White background avatar (camera image hidden)
-- Green body skeleton + red joint points
-- Red left-hand skeleton / green right-hand skeleton
-- Green/red eye + eyebrow highlights
-- Temporal smoothing
-- Clean better UI (no FPS display)
-- Minimal UI: heading, logo, and raised-side labels only
-- Live gesture captions for left/right hand raised
-- Live gesture captions for left/right leg raised
-- INKER ROBOTICS POSE ESTIMATION heading
-- Logo loaded from a direct image URL
-- Fullscreen toggle and optional mirror mode
-
-Keyboard
-  Q or ESC : quit
-  F        : toggle fullscreen
-  M        : toggle mirrored avatar output
-  R        : reset smoothing
-
-Install:
-  python -m pip install --upgrade mediapipe opencv-python numpy
-
-The model file is downloaded automatically from Google's official MediaPipe
-model bucket on first run.
-"""
 
 from __future__ import annotations
 
